@@ -8,11 +8,16 @@ class Jabbersonic < Gosu::Window
   SOUND_ROOT_LOCATION = "/Library/Audio/Apple Loops/Apple/iLife Sound Effects/"
   
   def initialize(user, pass)
-    super(100,100, false)
+    puts "Starting Jabbersonic"
+    puts "Connecting to jabber: #{user}"
     @im = Jabber::Simple.new(user, pass)
+    puts "Connected: #{user}"
+    puts "Started Sound Engine"
+    super(100,100, false)
     @sound_store = {}
     @cmds = YAML.load_file(File.dirname(__FILE__) + '/../config.yml')
     start(@cmds["background"])
+    puts "Started Jabbersonic"
   end
   
   def update
