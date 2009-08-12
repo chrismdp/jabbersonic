@@ -1,19 +1,18 @@
 Jabbersonic is a small library to allow the playing of sounds via jabber messages.
 
-License: MIT
+TO INSTALL
 
-Copyright: Chris Parsons
+1. Install Requirements: 
 
-Requirements: 
+gem install gosu xmpp4r-simple
 
-1. $ gem install gosu xmpp4r-simple
+2. Set Sound Root:
 
-2. The server currently assumes you have the iLife Samples installed and you want to use them. Change the SOUND_ROOT_LOCATION constant in jabbersonic.rb for different samples.
+The server currently assumes you have the iLife Samples installed and you want to use them. Change the SOUND_ROOT_LOCATION constant in jabbersonic.rb for different samples.
 
-To use:
+TO USE
 
-1. Configure the config file to your liking:
-
+1. Configure the config file (config.yml in the root folder) to your liking.
 2. $ bin/server <jabber user account to use> <password>
 3. Message the jabber user you supplied:
 
