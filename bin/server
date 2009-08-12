@@ -1,0 +1,6 @@
+#!/usr/bin/ruby
+
+require File.dirname(__FILE__) + "/../lib/jabbersonic"
+
+window = Jabbersonic.new(*ARGV)
+window.show

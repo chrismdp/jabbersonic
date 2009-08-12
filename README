@@ -1,0 +1,28 @@
+Jabbersonic is a small library to allow the playing of sounds via jabber messages.
+
+License: MIT
+
+Copyright: Chris Parsons
+
+Requirements: 
+
+1. $ gem install gosu xmpp4r-simple
+
+2. The server currently assumes you have the iLife Samples installed and you want to use them. Change the SOUND_ROOT_LOCATION constant in jabbersonic.rb for different samples.
+
+To use:
+
+1. Configure the config file to your liking:
+
+2. $ bin/server <jabber user account to use> <password>
+3. Message the jabber user you supplied:
+
+e.g.
+
+> failing_build          # start the 'failing_build' state
+> stop failing_build     # stop the 'failing_build' state
+> next_moved             # fire the 'next branch moved' event
+
+Commands with a type of 'state' will continue looping until you send a stop command Two are started at once with an offset to allow you to use samples that don't loop correctly if you want. 'Event' commands will only continue for the length of the sample.
+
+

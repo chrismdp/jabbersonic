@@ -1,0 +1,23 @@
+background:
+  :type: :background
+  :file: Ambience/Forest Evening.caf
+  :volume: 0.08
+failing_build: 
+  :type: :state
+  :file: Ambience/Rain Heavy Thunder.caf
+  :volume: 0.3
+building: 
+  :type: :state
+  :file: Ambience/Hard Rain.caf
+  :volume: 0.15
+next_moved: 
+  :type: :event
+  :file: Animals/Brontosaurus Wail.caf
+  :volume: 0.1
+branch_pushed:
+  :type: :event
+  :file: Animals/Frogs at Night.caf
+  :volume: 0.05
+live_exception: 
+  :type: :event
+  :file: Ambience/Thunder Clap.caf
